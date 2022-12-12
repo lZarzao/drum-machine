@@ -1,4 +1,4 @@
-const firstSoundsGroup = [
+const firstSoundGroup = [
   {
     keyCode: 81,
     key: 'Q',
@@ -55,7 +55,7 @@ const firstSoundsGroup = [
   },
 ];
 
-const secondSoundsGroup = [
+const secondSoundGroup = [
   {
     keyCode: 81,
     key: 'Q',
@@ -112,4 +112,4 @@ const secondSoundsGroup = [
   },
 ];
 
-export { firstSoundsGroup, secondSoundsGroup };
+export { firstSoundGroup, secondSoundGroup };
