@@ -5,6 +5,7 @@
 body {
   font-size: 24px;
   font-family: 'Open Sans';
+  background-color: #8d8d8d;
 }
 
 h2 {
@@ -16,8 +17,8 @@ h2 {
 }
 
 #drum-machine {
-  margin: 15px;
-  height: 100vh;
+  margin: 5px;
+  height: calc(100vh - 10px);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,6 +27,7 @@ h2 {
 
 .wrapper {
   width: 100%;
+  height: 550px;
   display: grid;
   padding: 10px;
   grid-gap: 15px;
@@ -51,15 +53,15 @@ h2 {
 .keyboard .drum-pad,
 .changeMode {
   width: 100%;
-  height: 80px;
+  height: 60px;
   outline: none;
   cursor: pointer;
   position: relative;
   top: 0px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   background: #f57936;
-  padding: 15px 50px;
+  padding: 0px;
   border: 1px solid #bc4809;
   border-radius: 5px;
   box-shadow: 0px 5px 0px #bc4809;
@@ -84,12 +86,35 @@ h2 {
   .wrapper {
     width: 680px;
   }
+
+  .keyboard .drum-pad {
+    height: 80px;
+    font-size: 25px;
+    padding: 15px 50px;
+  }
+
+  .control button {
+    font-size: 20px;
+  }
+
+  .controlControler .changeMode {
+    width: 160px;
+  }
+
+  input {
+    width: unset;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
 }
 
 @media (min-width: 992px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
     width: 810px;
+    height: unset;
   }
 }
 
@@ -104,7 +129,7 @@ h2 {
   border: none;
   color: #ffffff;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 14px;
   padding: 8px 10px;
 }
 
@@ -176,7 +201,7 @@ h2 {
 }
 
 svg {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .displayContainerInfo {
@@ -196,6 +221,10 @@ svg {
 }
 
 .controlControler .changeMode {
-  width: 160px;
+  width: 110px;
   height: 40px;
+}
+
+input {
+  width: 100px;
 }
